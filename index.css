@@ -1,0 +1,37 @@
+.calender{
+    border:1px red solid;
+    background: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+.calender-header{
+    text-align: center;
+    margin: 16px;
+    font-size: 18px;
+}
+.calender-week{
+    display: flex;
+}
+.calender-week>li{
+    width: 14.28%;
+    text-align: center;
+
+}
+.calender-days{
+    /* border: 1px green solid; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.calender-days>li{
+    /* border:1px red solid; */
+    width: 14.28%;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+}
+.calender-actions{
+    display: flex;
+    justify-content: space-between;
+    /* border:1px green solid; */
+    padding: 12px 4px;
+}
