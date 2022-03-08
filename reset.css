@@ -5,6 +5,8 @@
 }
 body{
     background: rgb(149, 149, 238);
+    margin: 0 auto;
+    /* max-width: 400px; */
 }
 ul,ol,li {
     list-style: none;

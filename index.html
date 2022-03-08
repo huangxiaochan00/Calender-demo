@@ -34,17 +34,27 @@
         </div>
         <div class="calender-actions">
             <div class="calender-actions-left">
-                <button>今天</button>
+                <button id='today'>今天</button>
             </div>
             <div class="calender-actions-right">
-                <button>上个月</button>
-                <button>下个月</button>
+                <button id="preMonth">上个月</button>
+                <button id="nextMonth">下个月</button>
             </div>
         </div>
     </div>
+    <script>
+        window.data = {
+            '2022-1-13': ["上课", "做实验"],
+            '2022-1-25': ["听音乐", "看电影"],
+            '2022-2-11': ["打游戏", "做作业"],
+            '2022-2-22': ["回学校"],
+            '2022-3-5': ["参加会议", "做实验"],
+            '2021-3-20': ["去旅游"],
+        }
+    </script>
     <div class="footer">
-        <div class="footer-date">xx年xx月xx日的安排</div>
-        <div class="footer-plan">没有日程</div>
+        <div class="footer-date">当前安排</div>
+        <div class="footer-plan" id="plan">没有日程</div>
     </div>
     <script src="main.js"></script>
 </body>

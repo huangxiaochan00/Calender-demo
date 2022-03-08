@@ -1,5 +1,6 @@
+
 .calender{
-    border:1px red solid;
+    /* border:1px red solid; */
     background: white;
     border-radius: 20px;
     margin: 10px;
@@ -22,12 +23,33 @@
     display: flex;
     flex-wrap: wrap;
 }
+.calender-days-today{
+    background: red;
+    border-radius: 5px;
+}
+.calender-days-selected{
+    border:1px red solid;
+    border-radius: 5px;
+}
+.calender-days-event::after{
+    content: '';
+    border:1px green solid ;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    background: green;
+    border-radius: 4px;
+
+}
 .calender-days>li{
     /* border:1px red solid; */
     width: 14.28%;
     text-align: center;
     height: 42px;
     line-height: 42px;
+    position: relative;
 }
 .calender-actions{
     display: flex;
